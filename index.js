@@ -71,7 +71,7 @@ console.log(
 
 function isAlmostZero(num) {
   // Перевіряємо, чи є число більше 0, але все ще менше за Number.MIN_VALUE
-  return !(num < Number.MIN_VALUE || num > 0);
+  return num < Number.MIN_VALUE && num > 0;
 }
 
 console.log("Завдання 6 ====================================");
